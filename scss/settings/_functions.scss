@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@use "sass:math";
+
+@function size($num, $is_rem: false) {
+  @if ($is_rem) {
+    @return math.div($num, 10) * 1rem;
+  } @else {
+    @return math.div($num, 750) * 100vw;
+  }
+}

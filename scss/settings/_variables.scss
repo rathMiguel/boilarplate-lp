@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+//=====================================
+// カラーバリエーション
+//=====================================
+
+$color-default: #292827;
+$color-link: #3c589b;
+
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #ccc;
+
+$color-primary: #EE7300;
+
+//=====================================
+// 画像パス
+//=====================================
+
+$img: "images/";
+
+//=====================================
+// メディアタイプ
+//=====================================
+
+$breakpoints: (
+  default: "print, screen and (min-width: 961px)",
+  xs: "only screen and (min-width: 480px)",
+  sm: "only screen and (min-width: 640px)",
+  md: "only screen and (min-width: 768px)",
+  lg: "print, screen and (min-width: 1024px)",
+  xl: "print, screen and (min-width: 1280px)",
+  2xl: "print, screen and (min-width: 1536px)",
+  retina: "screen and (-webkit-min-device-pixel-ratio: 2)",
+  print: "print",
+) !default;
+
+//=====================================
+// フォント
+//=====================================
+
+$ja_go: "Noto Sans JP", "游ゴシック体", "YuGothic", "游ゴシック Medium",
+  "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+$ja_min: "Hina Mincho", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "HG明朝B", "ＭＳ Ｐ明朝",
+  "MS PMincho", "MS 明朝", serif;
+$ja_maru: "ヒラギノ丸ゴ Pro W4", "Hiragino maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO",
+  "Verdana", "Osaka", sans-serif;
+$brandon: "brandon-grotesque", sans-serif;

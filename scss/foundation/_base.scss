@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@use "../settings/variables" as *;
+@use "../settings/mixins" as *;
+@use "../settings/functions" as *;
+
+@use "sass:math";
+
+html {
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $ja_go;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  color: $color-default;
+  padding-bottom: 60px;
+  color: #272727;
+  line-height: math.div(56, 30);
+  @include media(md) {
+    padding-bottom: 80px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: math.div(56, 30) * 1em;
+}
+
+a {
+  color: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $color-primary;
+}
+
+strong {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+picture {
+  display: inline-block;
+}
